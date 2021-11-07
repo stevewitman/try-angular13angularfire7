@@ -1,0 +1,8 @@
+<h1>Posts</h1>
+
+<button mat-button color="warn" routerLink="add" routerLinkActive="router-link-active" >Add Post</button>
+
+<div *ngFor="let post of posts" class="post-card">
+  <h2>{{post.title}}</h2>
+  <p>{{post.description}}</p>
+</div>
